@@ -207,7 +207,7 @@ The spacing used in your code makes a considerable difference in the readability
 - Readability is more important than line efficiency.  If defining associative arrays within a function call setup new lines for definitions with spacing offset by four spaces.
 
     Yes:
-      res += Broadcasts.find({
+      response += Broadcasts.find({
           $and: [
               {page: page._id},
               {time: {
@@ -216,7 +216,7 @@ The spacing used in your code makes a considerable difference in the readability
               }}
           ]}).count();
     No:
-      res += Broadcasts.find({$and: [{page: page._id}, {time: {$gt: gate, $lt: now}}]}).count();
+      response += Broadcasts.find({$and: [{page: page._id}, {time: {$gt: gate, $lt: now}}]}).count();
 
 
 
